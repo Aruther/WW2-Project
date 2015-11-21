@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+// Labels
+    
+    @IBOutlet weak var testLabel: UILabel!
+
+    
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +31,28 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+// IB Actions
+    
+    
+
+    @IBAction func americanFlagButtonPressed(sender: AnyObject) {
+        
+    testLabel.text = "Test"
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
 
