@@ -14,6 +14,7 @@
 		D72EA85B1C00DB1700D2FF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72EA8591C00DB1700D2FF5B /* LaunchScreen.storyboard */; };
 		D72EA8661C00DB1700D2FF5B /* WWIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72EA8651C00DB1700D2FF5B /* WWIITests.swift */; };
 		D72EA8711C00DB1700D2FF5B /* WWIIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72EA8701C00DB1700D2FF5B /* WWIIUITests.swift */; };
+		D72EA8831C01393900D2FF5B /* leaderInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72EA8821C01393900D2FF5B /* leaderInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D72EA86C1C00DB1700D2FF5B /* WWIIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWIIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72EA8701C00DB1700D2FF5B /* WWIIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWIIUITests.swift; sourceTree = "<group>"; };
 		D72EA8721C00DB1700D2FF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D72EA8821C01393900D2FF5B /* leaderInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leaderInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				D72EA8501C00DB1700D2FF5B /* AppDelegate.swift */,
 				D72EA8521C00DB1700D2FF5B /* ViewController.swift */,
+				D72EA8821C01393900D2FF5B /* leaderInfoViewController.swift */,
 				D72EA8541C00DB1700D2FF5B /* Main.storyboard */,
 				D72EA8571C00DB1700D2FF5B /* AmericanFlag.xcassets */,
 				D72EA8591C00DB1700D2FF5B /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72EA8531C00DB1700D2FF5B /* ViewController.swift in Sources */,
+				D72EA8831C01393900D2FF5B /* leaderInfoViewController.swift in Sources */,
 				D72EA8511C00DB1700D2FF5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

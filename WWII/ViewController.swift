@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
 // Labels
     
-    @IBOutlet weak var testLabel: UILabel!
+
 
     
     
@@ -30,29 +30,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+        
 
 // IB Actions
     
+    @IBAction func americanFlagButtonPressed(sender: UIButton) {
     
-
-    @IBAction func americanFlagButtonPressed(sender: AnyObject) {
         
-    testLabel.text = "Test"
+        
+        
+        performSegueWithIdentifier("showLeaderInfo", sender: self)
+    
+        
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
+  
 }
-

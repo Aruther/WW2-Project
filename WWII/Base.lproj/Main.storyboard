@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HYF-Kw-meu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xnM-lC-QdN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWII Leaders and Dictators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQo-Zq-Dhk">
@@ -86,9 +86,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="170" y="90" width="130" height="120"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="38z-PW-6Qw" kind="show" id="bpk-Sa-z2L"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bD7-9B-PSW">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -96,9 +93,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="258" width="130" height="120"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="38z-PW-6Qw" kind="show" id="JoS-vK-Lc7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0O-Dy-Dbh">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -106,9 +100,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="170" y="258" width="130" height="120"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="38z-PW-6Qw" kind="show" id="X0J-xV-7Al"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYg-GU-y2g">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -116,9 +107,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="425" width="130" height="120"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="38z-PW-6Qw" kind="show" id="1uV-Rb-6Z8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFG-Gr-zec">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -126,9 +114,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="170" y="426" width="130" height="120"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="38z-PW-6Qw" kind="show" id="ZkE-Eo-4Dm"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEx-nH-s6Z">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -137,9 +122,7 @@
                                     <rect key="frame" x="20" y="90" width="130" height="120"/>
                                 </variation>
                                 <connections>
-                                    <action selector="americanFlagButtonPressed:" destination="8s1-gZ-KJI" eventType="touchUpInside" id="7sa-uQ-wkd"/>
-                                    <action selector="americanFlagButtonPresses:" destination="8s1-gZ-KJI" eventType="touchUpInside" id="Hzc-Bk-5fg"/>
-                                    <segue destination="38z-PW-6Qw" kind="show" id="G6k-XB-Vn2"/>
+                                    <action selector="americanFlagButtonPressed:" destination="8s1-gZ-KJI" eventType="touchUpInside" id="dD6-Zn-NW7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -180,53 +163,53 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="lKc-2w-OgJ" kind="show" identifier="showLeaderInfo" id="fma-sG-0A1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g01-gN-1ZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-451.5" y="403.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="iPl-mo-SVz">
+        <!--Leader Info View Controller-->
+        <scene sceneID="hpi-Kd-Jsf">
             <objects>
-                <viewController id="38z-PW-6Qw" customClass="ViewController" customModule="WWII" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lKc-2w-OgJ" customClass="leaderInfoViewController" customModule="WWII" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="arL-fe-HD9"/>
-                        <viewControllerLayoutGuide type="bottom" id="hRe-zi-bxB"/>
+                        <viewControllerLayoutGuide type="top" id="2pI-vA-khq"/>
+                        <viewControllerLayoutGuide type="bottom" id="jre-ar-Ih4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Der-dA-3Z9">
+                    <view key="view" contentMode="scaleToFill" id="0ng-v5-4Iv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6V-s0-HRH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qm-a5-NQh" customClass="Test">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="63" y="211" width="160" height="44"/>
+                                    <rect key="frame" x="116" y="243" width="42" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Y6V-s0-HRH"/>
+                                <exclude reference="9qm-a5-NQh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Y6V-s0-HRH"/>
+                                <include reference="9qm-a5-NQh"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="testLabel" destination="Y6V-s0-HRH" id="Khz-nt-EPg"/>
-                        <outlet property="testlable" destination="Y6V-s0-HRH" id="27Z-UP-sbf"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YlH-5h-5o8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gko-IW-aHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="403.5"/>
+            <point key="canvasLocation" x="291" y="403.5"/>
         </scene>
     </scenes>
     <resources>
@@ -237,7 +220,4 @@
         <image name="NaziFlag" width="284" height="177"/>
         <image name="SovietFlag" width="318" height="159"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="bpk-Sa-z2L"/>
-    </inferredMetricsTieBreakers>
 </document>
