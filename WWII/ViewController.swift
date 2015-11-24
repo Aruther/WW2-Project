@@ -40,9 +40,9 @@ class ViewController: UIViewController {
         
         
         performSegueWithIdentifier("showLeaderInfo", sender: self)
+
     
         
     }
-    
-  
+
 }

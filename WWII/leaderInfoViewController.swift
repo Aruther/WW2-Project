@@ -9,6 +9,14 @@
 import UIKit
 
 class leaderInfoViewController: UIViewController {
+    
+    
+    @IBOutlet weak var testLabel: UILabel!
+ 
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +28,6 @@ class leaderInfoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
 
 }
